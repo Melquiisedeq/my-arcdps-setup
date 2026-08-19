@@ -3,7 +3,8 @@
 Personal [ArcDPS](https://www.deltaconnected.com/arcdps/) configuration for **Guild Wars 2**, with a custom UI theme: rounded windows, custom font, and a clean layout for combat tracking.
 
 ![Preview](docs/preview.png)
-> *(add a screenshot to `docs/preview.png` — see instructions below)*
+![Preview](docs/preview2.png)
+
 
 ## Features
 

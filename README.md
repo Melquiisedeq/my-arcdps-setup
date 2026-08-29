@@ -5,7 +5,6 @@ Personal [ArcDPS](https://www.deltaconnected.com/arcdps/) configuration for **Gu
 ![Preview](docs/preview.png)
 ![Preview](docs/preview2.png)
 
-
 ## Features
 
 - **DPS meter** — real-time and end-of-fight damage breakdown

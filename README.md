@@ -34,16 +34,8 @@ Both versions have the same layout and features. Only the look is different.
 > 📷 _Screenshot coming soon._
 
 ### 🗂️ v1 · Original
-
-![v1 preview](docs/v1-original/preview2.png)
-
-<details>
-<summary>📸 More screenshots</summary>
-<br>
-
 ![v1 preview](docs/v1-original/preview1.png)
-
-</details>
+![v1 preview](docs/v1-original/preview2.png)
 
 ## ✨ Features
 

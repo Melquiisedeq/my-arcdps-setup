@@ -1,47 +1,138 @@
-# ArcDPS Config — DPS / Healing / Cleanses / Kill & Down Counter
+<div align="center">
 
-Personal [ArcDPS](https://www.deltaconnected.com/arcdps/) configuration for **Guild Wars 2**, with a custom UI theme: rounded windows, custom font, and a clean layout for combat tracking.
+# ⚔️ My ArcDPS Setup
 
-![Preview](docs/preview1.png)
-![Preview](docs/preview2.png)
+**A clean, rounded ArcDPS configuration for Guild Wars 2**
+DPS · Healing · Cleanses · Kills · Downs
 
-## Features
+![Guild Wars 2](https://img.shields.io/badge/Guild%20Wars%202-addon%20config-c8102e?style=for-the-badge)
+![ArcDPS](https://img.shields.io/badge/ArcDPS-ImGui%201.92-4a4a4a?style=for-the-badge)
+![Nexus](https://img.shields.io/badge/Nexus-compatible-2f6fb3?style=for-the-badge)
 
-- **DPS meter** — real-time and end-of-fight damage breakdown
-- **Healing tracking** — via the ArcDPS Healing Stats extension
-- **Cleanses tracking** — condition removal count per player
-- **Kill count** — enemy kills tracked per fight/session
-- **Down count** — times each player goes down
-- **Custom font** for better readability in windows/overlays
-- **Rounded window corners** and a personalized visual style (no default flat/square ArcDPS look)
+[📸 Preview](#-preview) · [✨ Features](#-features) · [📦 Requirements](#-requirements) · [🚀 Installation](#-installation) · [📝 Notes](#-notes)
 
-## Files in this repo
+</div>
 
-| File | Purpose |
-|---|---|
-| `arcdps.ini` | Main ArcDPS settings — window layout, columns shown, colors, style |
-| `arcdps_imgui.ini` | Saved window positions/sizes (Dear ImGui state) |
-| `arcdps_healing_stats.json` | Config for the Healing Stats extension (outgoing/incoming healing tracking) |
-| `arcdps_font.ttf` | Custom font used by the ArcDPS overlay windows |
+---
 
-## Requirements
+## 🎨 Versions
 
-This repo contains **only configuration files** — you need the actual DLLs installed first:
+Both versions have the same layout and features. Only the look is different.
 
-1. **ArcDPS core** — download `d3d11.dll` from the [official ArcDPS page](https://www.deltaconnected.com/arcdps/) and place it in your GW2 `bin64` folder.
-2. **Healing Stats extension** — required for the healing tracking to work (`arcdps_healing_stats.dll`), also available from the ArcDPS page under extensions.
-3. A legit Guild Wars 2 install with ArcDPS already launching correctly (test with the default config before applying this one).
+| | Version | Folder | Look |
+|:-:|---|---|---|
+| ⭐ | **v2 · Nexus style** _(current)_ | [`configs/v2-nexus-style`](configs/v2-nexus-style) | Neutral grey theme with 6px rounded corners, taken from the Nexus default UI style |
+| 🗂️ | **v1 · Original** | [`configs/v1-original`](configs/v1-original) | The first version of this setup, with 5px rounded corners and its own colour scheme |
 
-> ArcDPS is a well-established, widely used combat meter for GW2 and is explicitly tolerated by ArenaNet (it's not an automation/cheat tool — it only reads combat data). Still, always download the core DLL from the official source above, never from a third-party mirror.
+## 📸 Preview
 
-## Installation
+### ⭐ v2 · Nexus style
 
-1. Locate your Guild Wars 2 ArcDPS folder (usually `...\Guild Wars 2\addons\arcdps\`, or wherever your `d3d11.dll` for ArcDPS lives).
-2. Back up your current config files if you already have one you like.
-3. Copy all files from this repo directly into that folder — overwrite when prompted.
-4. Launch Guild Wars 2. The custom layout, font, and rounded windows should load automatically.
+<!-- Drop the screenshot at docs/v2-nexus-style/preview.png and uncomment the line below -->
+<!-- ![v2 preview](docs/v2-nexus-style/preview.png) -->
 
-## Notes
+> 📷 _Screenshot coming soon._
 
-- Window positions saved in `arcdps_imgui.ini` are relative to a specific screen resolution — if your resolution differs, you may need to reposition/resize the windows once and re-save.
-- Feel free to fork and tweak `arcdps.ini` to adjust colors, opacity, or which stats columns are shown.
+### 🗂️ v1 · Original
+
+![v1 preview](docs/v1-original/preview2.png)
+
+<details>
+<summary>📸 More screenshots</summary>
+<br>
+
+![v1 preview](docs/v1-original/preview1.png)
+
+</details>
+
+## ✨ Features
+
+| | |
+|:-:|---|
+| 💥 | **DPS meter**: real-time and end-of-fight damage breakdown |
+| 💚 | **Healing**: outgoing and incoming healing via the Healing Stats extension |
+| 🧹 | **Cleanses**: condition removal count per player |
+| 💀 | **Kill count**: enemy kills per fight and per session |
+| 🩸 | **Down count**: how many times each player went down |
+| 🔤 | **Custom font** for better readability |
+| 🔲 | **Rounded windows** instead of the default square ArcDPS look |
+
+## 📁 What's inside
+
+```
+configs/
+├── v1-original/
+└── v2-nexus-style/
+    ├── arcdps.ini                  ⚙️  main settings: columns, colours, UI style
+    ├── arcdps_imgui.ini            🪟  window positions and sizes
+    ├── arcdps_healing_stats.json   💚  Healing Stats extension settings
+    └── arcdps_font.ttf             🔤  font used by the ArcDPS windows
+docs/                               🖼️  screenshots
+```
+
+Each folder under `configs/` is a complete set, ready to copy.
+
+## 📦 Requirements
+
+This repo has **only configuration files**. Install the addons first:
+
+1. **[ArcDPS](https://www.deltaconnected.com/arcdps/)**, loaded one of two ways:
+   - 🔹 **Standalone**: put `d3d11.dll` in the Guild Wars 2 root folder, next to `Gw2-64.exe`.
+   - 🔹 **Through [Nexus](https://raidcore.gg/Nexus)**: Nexus takes the `d3d11.dll` slot and loads ArcDPS from `addons/ArcDPS.dll`. Install ArcDPS from the Nexus addon library.
+2. **[Healing Stats](https://github.com/Krappa322/arcdps_healing_stats/releases)**, needed for the healing columns.
+
+> [!CAUTION]
+> Only download DLLs from the official sources above, never from mirrors.
+
+## 🚀 Installation
+
+1. ❌ **Close Guild Wars 2.**
+2. 💾 **Back up** your current files in `Guild Wars 2\addons\arcdps\`.
+3. 📋 **Copy** everything from **one** folder (`configs/v2-nexus-style` or `configs/v1-original`) into `Guild Wars 2\addons\arcdps\` and replace the existing files.
+4. ▶️ **Launch** the game.
+
+> [!WARNING]
+> ArcDPS saves its config when the game closes. If you copy the files with the game open, your changes will be overwritten.
+
+## 📝 Notes
+
+<details>
+<summary>🖥️ <b>Different screen resolution?</b></summary>
+<br>
+
+Window positions in `arcdps_imgui.ini` were saved at a specific resolution. If yours is different, move and resize the windows once. ArcDPS saves the new positions on exit.
+
+</details>
+
+<details>
+<summary>🎨 <b>Where the theme lives</b></summary>
+<br>
+
+The whole UI style is stored in four lines of `arcdps.ini`:
+
+```ini
+appearance_imgui_style180=...
+appearance_imgui_colours180=...
+appearance_imgui_style192=...
+appearance_imgui_colours192=...
+```
+
+They are base64 dumps of Dear ImGui's style struct. Current ArcDPS uses the `192` keys (ImGui 1.92). The `180` keys are kept for older builds and for Nexus's _"ArcDPS Current"_ style import.
+
+To switch theme while keeping everything else, copy only these four lines from one version to the other.
+
+</details>
+
+<details>
+<summary>🛠️ <b>Changing the style in-game</b></summary>
+<br>
+
+Open the ArcDPS options (`Alt` + `Shift` + `T`) and edit the style there. Changes are written back to `arcdps.ini` when you close the game.
+
+</details>
+
+---
+
+<div align="center">
+<sub>Made for personal use. Feel free to fork and tweak it. 🛡️</sub>
+</div>

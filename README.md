@@ -3,7 +3,7 @@
 # ⚔️ My ArcDPS Setup
 
 **A clean, rounded ArcDPS configuration for Guild Wars 2**
-DPS · Healing · Cleanses · Kills · Downs
+DPS · Healing · Boons · Cleanses · Strips · CC · Kills · Downs
 
 ![Guild Wars 2](https://img.shields.io/badge/Guild%20Wars%202-addon%20config-c8102e?style=for-the-badge)
 ![ArcDPS](https://img.shields.io/badge/ArcDPS-ImGui%201.92-4a4a4a?style=for-the-badge)
@@ -17,11 +17,11 @@ DPS · Healing · Cleanses · Kills · Downs
 
 ## 🎨 Versions
 
-Both versions have the same layout and features. Only the look is different.
+Each folder is a complete setup. v2 is the one I use today and gets the new windows and extensions.
 
 | | Version | Folder | Look |
 |:-:|---|---|---|
-| ⭐ | **v2 · Nexus style** _(current)_ | [`configs/v2-nexus-style`](configs/v2-nexus-style) | Neutral grey theme with 6px rounded corners, taken from the Nexus default UI style |
+| ⭐ | **v2 · Nexus style** _(current)_ | [`configs/v2-nexus-style`](configs/v2-nexus-style) | Neutral grey theme with 6px rounded corners, taken from the Nexus default UI style. Adds Strips, CC count and Boon Table |
 | 🗂️ | **v1 · Original** | [`configs/v1-original`](configs/v1-original) | The first version of this setup, with 5px rounded corners and its own colour scheme |
 
 ## 📸 Preview
@@ -39,15 +39,18 @@ Both versions have the same layout and features. Only the look is different.
 
 ## ✨ Features
 
-| | |
-|:-:|---|
-| 💥 | **DPS meter**: real-time and end-of-fight damage breakdown |
-| 💚 | **Healing**: outgoing and incoming healing via the Healing Stats extension |
-| 🧹 | **Cleanses**: condition removal count per player |
-| 💀 | **Kill count**: enemy kills per fight and per session |
-| 🩸 | **Down count**: how many times each player went down |
-| 🔤 | **Custom font** for better readability |
-| 🔲 | **Rounded windows** instead of the default square ArcDPS look |
+| | | v1 | v2 |
+|:-:|---|:-:|:-:|
+| 💥 | **DPS meter**: real-time and end-of-fight damage breakdown | ✅ | ✅ |
+| 💚 | **Healing**: outgoing and incoming healing via the Healing Stats extension | ✅ | ✅ |
+| 🧹 | **Cleanses**: condition removal count per player | ✅ | ✅ |
+| 💀 | **Kill count**: enemy kills per fight and per session | ✅ | ✅ |
+| 🩸 | **Down count**: how many times each player went down | ✅ | ✅ |
+| 🛡️ | **Boon Table**: boon uptime per player via the Boon Table extension | ➖ | ✅ |
+| ✂️ | **Strips**: boons removed from enemies per player | ➖ | ✅ |
+| 💫 | **CC count**: crowd control applied per player | ➖ | ✅ |
+| 🔤 | **Custom font** for better readability | ✅ | ✅ |
+| 🔲 | **Rounded windows** instead of the default square ArcDPS look | ✅ | ✅ |
 
 ## 📁 What's inside
 
@@ -58,6 +61,8 @@ configs/
     ├── arcdps.ini                  ⚙️  main settings: columns, colours, UI style
     ├── arcdps_imgui.ini            🪟  window positions and sizes
     ├── arcdps_healing_stats.json   💚  Healing Stats extension settings
+    ├── arcdps_table.ini            🛡️  Boon Table extension settings   (v2 only)
+    ├── arcdps_table_imgui.ini      📊  Boon Table columns and layout   (v2 only)
     └── arcdps_font.ttf             🔤  font used by the ArcDPS windows
 docs/                               🖼️  screenshots
 ```
@@ -72,6 +77,7 @@ This repo has **only configuration files**. Install the addons first:
    - 🔹 **Standalone**: put `d3d11.dll` in the Guild Wars 2 root folder, next to `Gw2-64.exe`.
    - 🔹 **Through [Nexus](https://raidcore.gg/Nexus)**: Nexus takes the `d3d11.dll` slot and loads ArcDPS from `addons/ArcDPS.dll`. Install ArcDPS from the Nexus addon library.
 2. **[Healing Stats](https://github.com/Krappa322/arcdps_healing_stats/releases)**, needed for the healing columns.
+3. **[Boon Table](https://github.com/knoxfighter/GW2-ArcDPS-Boon-Table/releases)** _(v2 only)_, needed for the boon uptime window.
 
 > [!CAUTION]
 > Only download DLLs from the official sources above, never from mirrors.

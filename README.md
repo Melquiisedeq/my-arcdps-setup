@@ -28,14 +28,12 @@ Each folder is a complete setup. v2 is the one I use today and gets the new wind
 
 ### ⭐ v2 · Nexus style
 
-<!-- Drop the screenshot at docs/v2-nexus-style/preview.png and uncomment the line below -->
-<!-- ![v2 preview](docs/v2-nexus-style/preview.png) -->
-
-> 📷 _Screenshot coming soon._
+![v2 preview](docs/v2-nexus-style/v2-preview1.png)
+![v2 preview](docs/v2-nexus-style/v2-preview2.png)
 
 ### 🗂️ v1 · Original
-![v1 preview](docs/v1-original/preview1.png)
-![v1 preview](docs/v1-original/preview2.png)
+![v1 preview](docs/v1-original/v1-preview1.png)
+![v1 preview](docs/v1-original/v1-preview2.png)
 
 ## ✨ Features
 
